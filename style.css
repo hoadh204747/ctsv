@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: block;
+}
+/* start-header */
+#header{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color:brown;
+}
+.wrap-header{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.img-banner{
+    /* margin-left: 16px; */
+    height: 60px;
+}
+
+.header-info-user{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.header-info-user .infomation {
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.img-ctsv{
+    height: 50px;
+    width: 50px;
+}
+
+#header .slide-bar{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    margin-top: 110px;
+}
+
+.slide-bar ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 200px;
+}
+
+.slide-bar ul li{
+    display: inline;
+    margin-left: 27px;
+}
+.slide-bar ul li a{
+    text-decoration: none ;
+    color: white;
+    font-size: 18px;
+}
+/* end-header */
+
+/* start-main */
+.humburger{
+
+    height: 40px;
+    margin:0 200px 0;
+    display: flex;
+    align-items: center;
+}
+.humburger p{
+    color: brown;
+}
+.app-main{
+    position: relative;
+    margin-top: 10px;
+    height: 720px;
+}
+.app-main .main-info{
+    position:absolute;
+    margin-left: 200px;
+    width: 400px;
+    height: 450px;
+    border-radius: 15px;
+    border: 0.5px solid #ccc;
+}
+
+.app-main .main-state{
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 460px;
+    width: 400px;
+    height: 250px;
+    border: 0.5px solid #ccc;
+    border-radius: 15px;
+}
+
+.app-main > .main-detail-info{
+    position: absolute;
+    right: 0;
+    margin-right: 200px;
+    width: 830px;
+    height: 710px;
+    border: 0.5px solid #ccc;
+    border-radius: 15px;
+}
+
+.main-info{
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.main-info .img-c1 img{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    transition: transform 0.3s;
+}
+.img-c1 img:hover{
+    transform: scale(1.2);
+}
+.main-info .img-hoahuy img{
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.main-info .text-info{
+    position: absolute;
+    width: 380px;
+    height: 160px;
+    top: 280px;
+    left: 10px;
+}
+.main-info .text-info p{
+    line-height: 2;
+}
+
+/* main-state */
+
+.main-state{
+    position:relative ;
+}
+.main-state .list-state{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    left: 30px;
+    top: 20px;
+    width: 300px;
+    /* height: 50px; */
+    border-bottom: 1px solid #ccc;
+}
+
+.main-state .list-state p{
+    /* margin-right: 10px; */
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.main-state .list-state p:hover {
+    cursor: pointer;
+    color:red;
+}
+
+.main-state .content-state-person{
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    width: 300px;
+    height: 160px;
+}
+.main-state .content-state-person p{
+    line-height: 1.5;
+}
+.main-state .content-state-teacher{
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    width: 300px;
+    height: 100px;
+}
+.main-state .content-state-teacher p{
+    line-height: 1.5;
+}
+
+/* main-detail-info */
+/* list */
+.main-detail-info{
+    position: relative;
+}
+.main-detail-info .list-detail-info p:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.main-detail-info .list-detail-info{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 750px;
+    left: 30px;
+    top: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.main-detail-info .list-detail-info p{
+    padding: 10px 20px 10px;
+    border: 1px solid #ccc;
+}
+/* ly lich ca nhan */
+.main-detail-info .lylich{
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    width: 750px;
+    height: 600px;
+    /* background-color: aqua; */
+}
+
+/* .lylich .detail-canhan{
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    width: 730px;
+    height: 250px;
+    background-color: bisque;
+} */
+.lylich .row3{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.lylich .box__{
+    margin-left: 10px;
+    width: 33.3333%;
+    height: 100px;
+    /* background-color: bisque; */
+}
+.box__ p{
+    line-height: 1.5;
+}
+.text-01{
+    padding-left: 10px;
+    line-height: 1.5;
+}
+
+/* quyết định */
+
+.main-detail-info .quyetdinh{
+    display: none;
+}
+
+.main-detail-info .box_1{
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    width: 750px;
+    height: 120px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 2px #ccc;
+}
+.main-detail-info .box_2{
+    position: absolute;
+    top: 220px;
+    left: 30px;
+    width: 750px;
+    height: 120px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 2px #ccc;
+}
+
+.main-detail-info .quyetdinh p{
+    line-height: 2.3;
+    margin-left: 15px;
+}
+
+.main-detail-info .khenthuong{
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    width: 750px;
+    height: 120px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 2px #ccc;
+}
+.main-detail-info .khenthuong p{
+    margin: 50px 0 0 15px;
+}
+
+.main-detail-info .lienhe{
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    width: 750px;
+    height: 120px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 2px #ccc;
+}
+.main-detail-info .lienhe p{
+    line-height: 1.2;
+    margin: 15px 0 0 15px;
+}
+
+.main-detail-info .nhanxet{
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    width: 750px;
+    height: 120px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 2px #ccc;
+}
+.main-detail-info .nhanxet p{
+    margin: 50px 0 0 15px;
+}
+
+.main-detail-info .active{
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    width: 750px;
+    height: 120px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 2px #ccc;
+}
+
+/* footer */
+#footer{
+    position: relative;
+    background-image: url('/CTSV/assets/footer-ctsv.jpeg');
+    width: 100%;
+    height: 300px;
+    background-size: 100%;
+}
+
+#footer .a{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    margin-top: 140px;
+}
